@@ -156,6 +156,11 @@ set foldnestmax=10      " 10 nested fold max
 nnoremap <Space> za
 set foldmethod=indent   " fold based on indent level
 
+au FileType sh let g:sh_fold_enabled=5
+au FileType sh let g:is_bash=1
+au FileType sh set foldmethod=syntax
+au FileType sh syntax enable
+
 " Conque : cmd line from Vim
 " vim 'https://conque.googlecode.com/files/conque_2.3.vmb' -c ':so % | q'
 " Deux bind pratiques :
